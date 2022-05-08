@@ -1,6 +1,6 @@
 import asyncHandler from "express-async-handler";
-import Otp from "../models/Otp.js";
-// import generateToken from "../utils/generateToken.js";
+import Otp from "../models/otpModel.js";
+// import generateToken from "../utils/generat.jseToken.js";
 import User from "../models/userModel.js";
 import generateToken from "../utils/generateToken.js";
 import nodemailer from "nodemailer";
