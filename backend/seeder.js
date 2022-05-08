@@ -9,7 +9,7 @@ import products from "./data/product.js";
 // modal
 import User from "./models/userModel1.js";
 import Product from "./models/productModel1.js";
-import Order from "./models/orderModel.js";
+import Order from "./models/orderModel1.js";
 
 // connect database
 import connectDB from "./config/db.js";
