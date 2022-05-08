@@ -2,7 +2,7 @@
 
 import asyncHandler from "express-async-handler";
 import Coupon from "../models/couponModal.js";
-import User from "../models/userModel.js";
+import User from "../models/userModel1.js";
 import Cart from "../models/cartModel.js"
 
 // @desc    POST cart

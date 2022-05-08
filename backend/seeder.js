@@ -7,7 +7,7 @@ import users from "./data/user.js";
 import products from "./data/product.js";
 
 // modal
-import User from "./models/userModel.js";
+import User from "./models/userModel1.js";
 import Product from "./models/productModel1.js";
 import Order from "./models/orderModel.js";
 
