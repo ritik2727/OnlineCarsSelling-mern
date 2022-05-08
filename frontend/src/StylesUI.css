@@ -1,0 +1,24 @@
+buttond:disabled,
+buttond[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #cf1414;
+ 
+  
+}
+
+.dividerV {
+  width: 2px;
+}
+
+.dividerV {
+  height: 0.5px;
+}
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+
+
