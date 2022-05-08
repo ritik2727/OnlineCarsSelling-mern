@@ -2,13 +2,13 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import colors from "colors";
 
-// data
+// data 
 import users from "./data/user.js";
 import products from "./data/product.js";
 
 // modal
 import User from "./models/userModel.js";
-import Product from "./models/productModel.js";
+import Product from "./models/productModel1.js";
 import Order from "./models/orderModel.js";
 
 // connect database
