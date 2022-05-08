@@ -2,6 +2,7 @@
   "name": "frontend",
   "proxy": "http://localhost:5000/",
   "version": "0.1.0",
+ 
   "private": true,
   "dependencies": {
     "@david.kucsai/react-pdf-table": "^0.4.1",
@@ -15,18 +16,13 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "assert": "^2.0.0",
     "axios": "^0.24.0",
     "browserify-zlib": "^0.2.0",
-    "buffer": "^6.0.3",
-    "crypto-browserify": "^3.12.0",
     "framer-motion": "^6.3.0",
     "path-browserify": "^1.0.1",
-    "process": "^0.11.10",
     "react": "^18.0.0",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
-    "react-app-rewired": "^2.2.1",
     "react-bootstrap": "^2.0.4",
     "react-datepicker": "^4.7.0",
     "react-dom": "^18.0.0",
@@ -41,22 +37,19 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-bootstrap": "^0.26.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.0",
     "react-toastify": "^8.2.0",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
-    "stream-browserify": "^3.0.0",
-    "stream-http": "^3.2.0",
     "styled-components": "^5.3.5",
-    "url": "^0.11.0",
     "util": "^0.12.4",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -76,5 +69,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
   }
 }
