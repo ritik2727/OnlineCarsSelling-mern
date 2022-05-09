@@ -53,6 +53,30 @@ button:focus {
 /* carousel */
 /* .carousel-item-next,
 .carousel-item-prev, */
+
+.carousel-indicators li {
+  border-top: unset;
+  width: 10px;
+  border-bottom: unset;
+  border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 10px;
+  background-color: #F57C00;
+  height: 10px;
+  width: 20px;}                                                  
+                                                                 
+  .carousel-indicators .active {
+  border-top: unset;
+  border-bottom: unset;
+  border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 10px;
+  background-color: #F57C00;
+  height: 10px;
+  width: 50px}
+
 .carousel-item.active {
   display: flex;
 }

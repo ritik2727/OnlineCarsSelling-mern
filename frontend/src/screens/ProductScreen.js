@@ -58,7 +58,7 @@ const ProductScreen = () => {
     if (successProductReview) {
       alert.success("Review Submitted!");
       setRating(0);
-      setComment(""); 
+      setComment("");
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
       dispatch(listProductsDetails(params.id));
     }
@@ -66,7 +66,7 @@ const ProductScreen = () => {
       dispatch(listProductsDetails(params.id));
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
-  }, [params, dispatch, successProductReview,alert, product]);
+  }, [params, dispatch, successProductReview, alert, product]);
 
   const addToCartHandler = () => {
     navigate(`/cart/${params.id}?qty=${qty}`);
@@ -102,48 +102,55 @@ const ProductScreen = () => {
         <Message variant="danger">{error}</Message>
       ) : (
         <>
-         {/* <ToastContainer /> */}
+          {/* <ToastContainer /> */}
           <Meta title={product.name} />
           <Row style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Col md={6}>
               {/* <Image src={product.image} alt={product.name} fluid /> */}
-              <Carousel showThumbs={false}  renderIndicator={(onClickHandler, isSelected, index, label) => {
-                if (isSelected) {
+              <Carousel
+                showThumbs={false}
+                renderIndicator={(onClickHandler, isSelected, index, label) => {
+                  if (isSelected) {
                     return (
-                        <li
-                            style={{ background:Colors.orange,
-                            width: 8,
-                            height: 8,
-                            display: 'inline-block',
-                            margin: '0 8px' }}
-                            aria-label={`Selected: ${label} ${index + 1}`}
-                            title={`Selected: ${label} ${index + 1}`}
-                        />
+                      <li
+                        style={{
+                          background: Colors.orange,
+                          width: 8,
+                          height: 8,
+                          display: "inline-block",
+                          margin: "0 8px",
+                        }}
+                        aria-label={`Selected: ${label} ${index + 1}`}
+                        title={`Selected: ${label} ${index + 1}`}
+                      />
                     );
-                }
-                return (
+                  }
+                  return (
                     <li
-                        style={{background:"rgb(34 43 69)",
-                          // borderColor: Colors.SubWhite,
-                          backgroundImage:
-                            "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
-                          boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
-                         
+                      style={{
+                        background: "rgb(34 43 69)",
+                        // borderColor: Colors.SubWhite,
+                        backgroundImage:
+                          "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
+                        boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
+
                         width: 8,
                         height: 8,
-                        display: 'inline-block',
-                        margin: '0 8px',}}
-                        onClick={onClickHandler}
-                        onKeyDown={onClickHandler}
-                        value={index}
-                        key={index}
-                        role="button"
-                        tabIndex={0}
-                        title={`${label} ${index + 1}`}
-                        aria-label={`${label} ${index + 1}`}
+                        display: "inline-block",
+                        margin: "0 8px",
+                      }}
+                      onClick={onClickHandler}
+                      onKeyDown={onClickHandler}
+                      value={index}
+                      key={index}
+                      role="button"
+                      tabIndex={0}
+                      title={`${label} ${index + 1}`}
+                      aria-label={`${label} ${index + 1}`}
                     />
-                );
-            }}>
+                  );
+                }}
+              >
                 <div>
                   <Image
                     src={product.image}
@@ -391,15 +398,17 @@ const ProductScreen = () => {
                       <p>{review.comment}</p>
                     </ListGroup.Item>
                   ))}
-                <ListGroup.Item   style={{
-                        backgroundColor: "rgb(34 43 69)",
-                        borderColor: Colors.SubWhite,
-                        backgroundImage:
-                          "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
-                        boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
-                        color: Colors.white,
-                      }}>
-                  <Typography variant="h5" style={{textTransform:'none',}}>
+                <ListGroup.Item
+                  style={{
+                    backgroundColor: "rgb(34 43 69)",
+                    borderColor: Colors.SubWhite,
+                    backgroundImage:
+                      "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
+                    boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
+                    color: Colors.white,
+                  }}
+                >
+                  <Typography variant="h5" style={{ textTransform: "none" }}>
                     Write a Customer Review
                   </Typography>
                   {successProductReview && (
@@ -413,7 +422,7 @@ const ProductScreen = () => {
                   )}
                   {userInfo ? (
                     <Form onSubmit={submitHandler}>
-                      <Form.Group controlId="rating"> 
+                      <Form.Group controlId="rating">
                         <Form.Label>Rating</Form.Label>
                         <Form.Control
                           as="select"
@@ -445,7 +454,7 @@ const ProductScreen = () => {
                           backgroundColor: Colors.orange,
                           borderColor: Colors.SubWhite,
                           color: Colors.white,
-                          marginTop:'1em'
+                          marginTop: "1em",
                         }}
                       >
                         Submit
