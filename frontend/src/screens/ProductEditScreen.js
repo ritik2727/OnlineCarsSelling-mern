@@ -113,12 +113,16 @@ const ProductEditScreen = () => {
       );
       for (var i = 0; i < data.length; i++) {
         console.log(data[i].img);
-        images.push(data[i].img);
+
+        // this.setState({ 
+        //   arrayvar: this.state.array.concat([newelement])
+        // })
+        fileArray.push(data[i].img);
         // formdata.append("uploadedImages", e.target.files[i]);
         // console.log("ddddd", e.target.files[i], `${e.target.files[i].name}`);
       }
 
-      // setImage(data);
+      setImages(fileArray);
       console.log("images op", images);
       setUploading(false);
     } catch (error) {

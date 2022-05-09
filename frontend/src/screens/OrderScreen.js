@@ -167,6 +167,7 @@ const OrderScreen = () => {
                     document={<Invoice order={order} />}
                     fileName="invoice.pdf"
                     className="btn btn-sm btn-primary"
+                    style={{backgroundColor:Colors.orange}}
                   >
                     Download Invoice
                   </PDFDownloadLink>

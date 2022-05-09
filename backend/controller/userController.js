@@ -331,7 +331,7 @@ const googleLogin = asyncHandler(async (req, res) => {
             });
           } else {
             if (user) {
-              res.json({
+              res.json({ 
                 _id: user._id,
                 name: user.name,
                 email: user.email,

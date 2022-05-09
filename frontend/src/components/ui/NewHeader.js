@@ -809,6 +809,8 @@ export default function NewHeader(props) {
             //   key={`${route}${route.activeIndex}`}
             divider
             button
+            component={Link}
+            to="/accessories"
             //   component={Link}
             //   to={route.link}
             //   selected={props.value === route.activeIndex}
@@ -827,7 +829,7 @@ export default function NewHeader(props) {
             divider
             button
             component={Link}
-            to="/whistlist"
+            to="/wishlist"
             //   selected={props.value === route.activeIndex}
             classes={{ selected: classes.drawerItemSelected }}
             onClick={() => {
