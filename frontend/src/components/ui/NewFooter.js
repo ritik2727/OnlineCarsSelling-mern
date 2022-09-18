@@ -17,7 +17,8 @@ import {
   Pinterest,
   Apple,
   History,
-  LinkedIn
+  LinkedIn,
+  YouTube
 } from "@mui/icons-material";
 import logo from "./../../assests/charpahiya.png";
 import { useMediaQuery, Typography } from "@mui/material";
@@ -153,7 +154,16 @@ export default function NewFooter() {
               <Heading>CUSTOMER SERVICE</Heading>
               <ListGroup>
                 <Ul>
-                  <Link to="/">Contact Us</Link>
+                <a
+                    className="neon"
+                    // style={{color:'black'}}
+                    // target="_blank"
+                    rel="noreferrer"
+                    href="mailto:reactjsdeveloper45@gmail.com"
+                  >
+                
+                  Contact Us
+                  </a>
                 </Ul>
                 <Ul>
                   <Link to="/profile">Track Order</Link>
@@ -170,16 +180,42 @@ export default function NewFooter() {
               <Heading>COMPANY</Heading>
               <ListGroup>
                 <Ul>
-                  <Link to="/">About Us</Link>
+                <a
+                    className="neon"
+                    // style={{color:'black'}}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"
+                  >
+                  {/* <Link to="/https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"> */}
+                    About Us
+                    </a>
+                    {/* </Link> */}
                 </Ul>
                 {/* <Ul>
                   <Link to="/">We're Hiring</Link>
                 </Ul> */}
                 <Ul>
-                  <Link to="/">Terms and Condtions</Link>
+                  <a
+                    className="neon"
+                    // style={{color:'black'}}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"
+                  >
+                    Terms and Condtions
+                  </a>
                 </Ul>
                 <Ul>
-                  <Link to="/">Privacy Policy</Link>
+                  <a
+                    className="neon"
+                    // style={{color:'black'}}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"
+                  >
+                    Privacy Policy
+                  </a>
                 </Ul>
                 {/* <Ul>
                   <Link to="/">Blog</Link>
@@ -190,7 +226,7 @@ export default function NewFooter() {
             <Col sm={6} md={3}>
               <Heading>CONNECT WITH US</Heading>
               <ListGroup>
-                <Ul>
+                {/* <Ul>
                   <a
                     className="neon"
                     // style={{color:'black'}}
@@ -200,8 +236,8 @@ export default function NewFooter() {
                   >
                     <Facebook /> 4.7M People Like us
                   </a>
-                </Ul>
-                <Ul>
+                </Ul> */}
+                {/* <Ul>
                   <a
                     className="neon"
                     // style={{color:'black'}}
@@ -211,7 +247,7 @@ export default function NewFooter() {
                   >
                     <Instagram /> 1M Followers
                   </a>
-                </Ul>
+                </Ul> */}
                 <Ul>
                   &nbsp;
                   <a
@@ -232,6 +268,16 @@ export default function NewFooter() {
                     href="https://www.linkedin.com/in/ritik-jain-3b2208217/"
                   >
                     <LinkedIn />
+                  </a>
+                  &nbsp;
+                  <a
+                    className="neon"
+                    // style={{color:'black'}}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"
+                  >
+                    <YouTube />
                   </a>
                   {/* &nbsp;
                   <Link to="/">
@@ -288,7 +334,7 @@ export default function NewFooter() {
                 </Ul>
               </ListGroup>
             </Col> */}
-            <Col sm={6} md={3}>
+            {/* <Col sm={6} md={3}>
               <Heading>DOWNLOAD THE APP</Heading>
               <ListGroup>
                 <Ul>
@@ -319,7 +365,7 @@ export default function NewFooter() {
                   </a>
                 </Ul>
               </ListGroup>
-            </Col>
+            </Col> */}
             <Col style={{ padding: "8px 10px" }} sm={12} md={6}>
               <Heading>100% Secure Connection</Heading>
               <Ul>
@@ -373,7 +419,8 @@ export default function NewFooter() {
               // style={{color:'black'}}
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/ritik-jain-3b2208217/"
+              href="https://www.youtube.com/channel/UCZDazsY2zyfoX6sw1H3Qs8w"
+              // href="https://www.linkedin.com/in/ritik-jain-3b2208217/"
             >
               @Team_Speed
             </a>

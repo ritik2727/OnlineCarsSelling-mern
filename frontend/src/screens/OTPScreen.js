@@ -18,8 +18,11 @@ const OTPScreen = () => {
   const emailRef = useRef();
   const [password, setPassword] = useState("");
   const [otp, setOtp] = useState("");
+  // setOtp(443343);
   const [cpassword, setCPassword] = useState("");
   const [otpForm, showForm] = useState(true);
+  // int a = 4;
+  // a =5;
 
   const [formErrors, setFormErrors] = useState({}); //error
   const [errors, setErrors] = useState();
